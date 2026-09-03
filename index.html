@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TI Denis Ripol — Integrações entre ERP e Marketplaces</title>
+<meta name="description" content="Desenvolvimento de integrações entre sistemas de gestão (ERP) e marketplaces: Shopee, Amazon, Magalu, Mercado Livre e TikTok Shop.">
+<style>
+  :root {
+    --navy: #1f4e78;
+    --tinta: #24292f;
+    --suave: #57606a;
+    --linha: #d8dee4;
+    --fundo: #ffffff;
+    --caixa: #f6f8fa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--tinta);
+    background: var(--fundo);
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  header {
+    border-bottom: 1px solid var(--linha);
+    padding: 56px 0 40px;
+  }
+  header h1 { font-size: 30px; margin: 0 0 6px; color: var(--navy); letter-spacing: -0.02em; }
+  header .sub { font-size: 18px; color: var(--suave); margin: 0; }
+  header .local { font-size: 14px; color: var(--suave); margin-top: 18px; }
+  section { padding: 40px 0; border-bottom: 1px solid var(--linha); }
+  section:last-of-type { border-bottom: 0; }
+  h2 { font-size: 20px; color: var(--navy); margin: 0 0 14px; }
+  h3 { font-size: 16px; margin: 24px 0 6px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin-top: 20px; }
+  .card { background: var(--caixa); border: 1px solid var(--linha); border-radius: 8px; padding: 18px 20px; }
+  .card h3 { margin-top: 0; color: var(--navy); }
+  .card p { margin: 0; font-size: 15px; color: var(--suave); }
+  .mkt { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  .mkt span {
+    background: var(--caixa); border: 1px solid var(--linha); border-radius: 999px;
+    padding: 6px 16px; font-size: 15px;
+  }
+  dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; }
+  dt { color: var(--suave); font-size: 15px; }
+  dd { margin: 0; font-size: 15px; }
+  a { color: var(--navy); }
+  footer { padding: 32px 0 56px; font-size: 14px; color: var(--suave); }
+  .en { background: var(--caixa); border-radius: 8px; padding: 22px 24px; }
+  .en h2 { margin-top: 0; }
+  .en p, .en li { font-size: 15px; color: var(--suave); }
+  @media (max-width: 560px) {
+    header { padding: 36px 0 28px; }
+    header h1 { font-size: 25px; }
+    dl { grid-template-columns: 1fr; gap: 2px 0; }
+    dt { margin-top: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>TI Denis Ripol — Desenvolvimento de Sistemas</h1>
+    <p class="sub">Integrações entre sistemas de gestão (ERP) e marketplaces</p>
+    <p class="local">Cuiabá — Mato Grosso — Brasil</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>O que fazemos</h2>
+    <p>
+      Desenvolvemos e mantemos integrações que conectam o sistema de gestão de um
+      lojista aos marketplaces em que ele vende. O objetivo é eliminar os dois
+      problemas mais comuns de quem opera nos dois canais ao mesmo tempo:
+      <strong>estoque divergente</strong> entre a loja física e a virtual, e
+      <strong>pedido redigitado à mão</strong> no ERP para conseguir emitir a nota fiscal.
+    </p>
+    <p>
+      O trabalho é entregue de duas formas: como <strong>módulo embarcado</strong> no
+      ERP do cliente, e como <strong>integrador independente</strong>, que se conecta a
+      sistemas de gestão de terceiros.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Marketplaces integrados</h2>
+    <div class="mkt">
+      <span>Shopee</span>
+      <span>Amazon</span>
+      <span>Magalu</span>
+      <span>Mercado Livre</span>
+      <span>TikTok Shop</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>O que a integração faz</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Pedidos</h3>
+        <p>
+          Importa o pedido do marketplace para o ERP gerando venda, itens, pagamento
+          e emissão fiscal correspondente, sem redigitação.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Estoque</h3>
+        <p>
+          Sincroniza o estoque físico para o marketplace, por alteração e também de
+          forma periódica, evitando venda de item indisponível.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Catálogo</h3>
+        <p>
+          Importa os anúncios do marketplace, vincula ao produto do ERP e permite
+          cadastrar produtos novos a partir do catálogo do lojista.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Expedição</h3>
+        <p>
+          Despacho do pedido, emissão e download de etiqueta de envio e tratamento
+          de solicitações de cancelamento.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Como os dados são tratados</h2>
+    <ul>
+      <li>
+        O sistema é executado na infraestrutura do próprio lojista, e os dados dos
+        pedidos são gravados no banco de dados dele. <strong>Não há servidor
+        intermediário nosso armazenando dados de compradores.</strong>
+      </li>
+      <li>
+        As credenciais de acesso às APIs ficam <strong>criptografadas</strong> no banco
+        de dados do lojista.
+      </li>
+      <li>
+        Cada loja <strong>autoriza individualmente</strong> o aplicativo, pelo fluxo
+        oficial de autorização do marketplace. Não há acesso compartilhado entre
+        clientes distintos.
+      </li>
+      <li>
+        Os dados pessoais recebidos limitam-se ao necessário para processar o pedido
+        e emitir o documento fiscal exigido pela legislação brasileira.
+      </li>
+    </ul>
+    <p>
+      O detalhamento completo está na
+      <a href="https://denisripol.github.io/ti-denis-ripol-privacidade/">Política de Privacidade</a>.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Dados da empresa</h2>
+    <dl>
+      <dt>Razão social</dt><dd>57.190.371 DENIS RIPOL</dd>
+      <dt>Nome fantasia</dt><dd>TI Denis Ripol — Desenvolvimento de Sistemas</dd>
+      <dt>CNPJ</dt><dd>[57.190.371/0001-09]</dd>
+      <dt>Cidade</dt><dd>Cuiabá — MT, Brasil</dd>
+      <dt>Responsável</dt><dd>Denis Ripol</dd>
+      <dt>E-mail</dt><dd><a href="mailto:denisripol@hotmail.com">denisripol@hotmail.com</a></dd>
+    </dl>
+  </div>
+</section>
+
+<section>
+  <div class="wrap en">
+    <h2>About us (English)</h2>
+    <p>
+      <strong>TI Denis Ripol — Desenvolvimento de Sistemas</strong> is an independent
+      software developer based in Cuiabá, Brazil. We build and maintain integrations
+      between merchants' ERP systems and online marketplaces.
+    </p>
+    <p>
+      Our integration currently supports <strong>Shopee, Amazon, Magalu, Mercado Livre
+      and TikTok Shop</strong>, covering order import with automatic Brazilian tax
+      document issuance, stock synchronisation, catalogue import and product listing,
+      shipping and cancellation handling.
+    </p>
+    <p>
+      The software runs on each merchant's own infrastructure and stores order data in
+      the merchant's own database. We operate no intermediary server holding buyer
+      data. API credentials are stored encrypted, and each shop authorises the
+      application individually through the marketplace's official authorisation flow.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    TI Denis Ripol — Desenvolvimento de Sistemas ·
+    <a href="https://denisripol.github.io/ti-denis-ripol-privacidade/">Política de Privacidade</a>
+  </div>
+</footer>
+
+</body>
+</html>
